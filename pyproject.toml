@@ -1,16 +1,13 @@
 [project]
-name = "src"
+name = "agent_harness"
 version = "0.1.0"
-description = "Add your description here"
+description = "Build and run a pure Python agent and harness against oMLX"
 readme = "README.md"
 authors = [
     { name = "blitterated", email = "blitterated@proton.me" }
 ]
 requires-python = ">=3.14"
 dependencies = []
-
-[project.scripts]
-src = "src:main"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
