@@ -8,3 +8,14 @@ wheels/
 
 # Virtual environments
 .venv
+
+# I dislike these files
+.DS_Store
+._*
+Thumbs.db
+
+# [Neo]Vim temp and backup files
+*~
+\#*#
+*.swo
+*.swp
