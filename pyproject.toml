@@ -7,7 +7,11 @@ authors = [
     { name = "blitterated", email = "blitterated@proton.me" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "mcp>=2.3.0",
+    "openai>=3.24.0",
+    "pydantic>=2.13.5",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
