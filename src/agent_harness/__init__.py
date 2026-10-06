@@ -1,7 +1,9 @@
 import subprocess
 from openai import OpenAI
 
+
 KEY_PATH = "API/oMLX/api_key"
+
 
 def get_api_key() -> str:
     try:
@@ -17,6 +19,7 @@ def get_api_key() -> str:
 
     except subprocess.CalledProcessError as e:
         raise RuntimeError(f"gopass failed for '{KEY_PATH}': {e.stderr.strip()}")
+
 
 def create_client():
     return OpenAI(
