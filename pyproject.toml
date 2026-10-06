@@ -14,6 +14,7 @@ dependencies = [
 
 [project.scripts]
 v0 = "agent_harness.v0_call_llm:loop"
+v1 = "agent_harness.v1_call_tools:loop"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
