@@ -1,6 +1,5 @@
-[project]
-name = "agent_harness"
-version = "0.1.0"
+project.name = "agent_harness"
+project.version = "0.1.0"
 description = "Build and run a pure Python agent and harness against oMLX"
 readme = "README.md"
 authors = [
@@ -12,6 +11,9 @@ dependencies = [
     "openai>=3.24.0",
     "pydantic>=2.13.5",
 ]
+
+[project.scripts]
+v0 = "agent_harness.v0_call_llm:loop"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
