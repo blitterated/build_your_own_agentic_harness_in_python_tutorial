@@ -20,6 +20,7 @@ v1 = "agent_harness.v1_call_tools:loop"
 v2 = "agent_harness.v2_agentic_loop:loop"
 v3 = "agent_harness.v3_call_mcp:main"
 v4 = "agent_harness.v4_saving_memory:main"
+v5 = "agent_harness.v5_full_harness:main"
 
 
 [build-system]
