@@ -19,6 +19,7 @@ v0 = "agent_harness.v0_call_llm:loop"
 v1 = "agent_harness.v1_call_tools:loop"
 v2 = "agent_harness.v2_agentic_loop:loop"
 v3 = "agent_harness.v3_call_mcp:main"
+v4 = "agent_harness.v4_saving_memory:main"
 
 
 [build-system]
