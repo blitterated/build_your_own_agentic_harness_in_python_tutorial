@@ -1,0 +1,33 @@
+Summary: Python's __main__ Module
+
+The article "____main____ — Top-level code environment" from Python 3.14.8 documentation explains the importance and usage of the special name __main__ in Python.
+
+Key Concepts:
+
+1. Dual Purpose of __main__
+   - The name of the top-level environment of a program
+   - The name of __main__.py files in Python packages
+   - Both are related to how users interact with modules
+
+2. How __name__ Works
+   - When a Python module or package is imported, __name__ is set to the module's name
+   - When a module is executed in the top-level code environment, __name__ is set to '__main__'
+   - This allows modules to check if they're running as the main program or being imported
+
+3. The Top-Level Code Environment
+   - Where top-level code is first run
+   - Can be an interactive prompt, a file argument (-m argument, standard input, or -c argument)
+   - Acts as an entry point to the application
+
+4. Idiomatic Usage
+   - The common pattern: if __name__ == '__main__':
+   - Code within this block only runs when the module is executed directly, not when imported
+   - Useful for modules with script-only code (command-line arguments, standard input, etc.)
+
+5. Best Practices
+   - Encapsulate primary behavior in a main() function
+   - Keep the __main__ block minimal (just call main())
+   - This prevents global variable pollution and maintains code clarity
+   - The main() function approach keeps functions isolated and importable
+
+This mechanism is fundamental to Python's module system and is essential for writing clean, reusable, and testable code.

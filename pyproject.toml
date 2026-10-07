@@ -13,10 +13,13 @@ dependencies = [
     "pydantic>=2.13.5",
 ]
 
+
 [project.scripts]
 v0 = "agent_harness.v0_call_llm:loop"
 v1 = "agent_harness.v1_call_tools:loop"
 v2 = "agent_harness.v2_agentic_loop:loop"
+v3 = "agent_harness.v3_call_mcp:main"
+
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
