@@ -1,5 +1,6 @@
-project.name = "agent_harness"
-project.version = "0.1.0"
+[project]
+name = "agent_harness"
+version = "0.1.0"
 description = "Build and run a pure Python agent and harness against oMLX"
 readme = "README.md"
 authors = [
